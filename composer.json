@@ -33,6 +33,7 @@
     "sort-packages": true
   },
   "scripts": {
+    "static:analyze": "vendor/bin/php-cs-fixer fix --dry-run",
     "cs:php:fix": "vendor/bin/php-cs-fixer fix"
   },
   "require-dev": {
