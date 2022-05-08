@@ -1,0 +1,5 @@
+vendor
+output/*
+!output/.gitkep
+docker-compose.yml
+var

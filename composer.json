@@ -1,0 +1,41 @@
+{
+  "name": "flow-php/etl-examples",
+  "type": "library",
+  "description": "Flow PHP Examples",
+  "keywords": ["etl", "extract", "transform", "load", "adapter", "examples"],
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require": {
+    "php": "~8.1",
+    "ext-json": "*",
+    "aeon-php/calendar": "^1.0",
+    "codename/parquet": "^0.6.2",
+    "flow-php/doctrine-dbal-bulk": "1.x-dev",
+    "flow-php/etl": "^1.0@dev",
+    "flow-php/etl-adapter-amphp": "^1.0@dev",
+    "flow-php/etl-adapter-csv": "^1.0@dev",
+    "flow-php/etl-adapter-doctrine": "1.x-dev",
+    "flow-php/etl-adapter-json": "^1.0@dev",
+    "flow-php/etl-adapter-parquet": "1.x-dev",
+    "flow-php/etl-adapter-reactphp": "^1.0@dev",
+    "league/csv": "^9.8",
+    "monolog/monolog": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Flow\\": [
+        "src/Flow"
+      ]
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "scripts": {
+    "cs:php:fix": "vendor/bin/php-cs-fixer fix"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.8"
+  }
+}
