@@ -44,4 +44,4 @@ $stopwatch->start();
 
 $stopwatch->stop();
 
-print 'Flow PHP - Elapsed time: ' . $stopwatch->totalElapsedTime()->inSecondsPrecise() . "s \n";
+echo 'Flow PHP - Elapsed time: ' . $stopwatch->totalElapsedTime()->inSecondsPrecise() . "s \n";

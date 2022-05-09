@@ -19,7 +19,7 @@ return new class implements Extractor {
             );
 
             if (\count($rows) >= 100_000) {
-                print 'extracted ' . $i . "\n";
+                echo 'extracted ' . $i . "\n";
                 yield new Rows(...$rows);
 
                 $rows = [];
