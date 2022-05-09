@@ -18,7 +18,7 @@ foreach ($dbConnection->createSchemaManager()->listTables() as $table) {
 
 $dbConnection->createSchemaManager()->createTable(
     (new Table(
-        $tableName = 'flow_async_table',
+        $tableName = 'flow_dataset_table',
         [
             new Column('id', Type::getType(Types::INTEGER), ['notnull' => true]),
             new Column('name', Type::getType(Types::STRING), ['notnull' => true, 'length' => 255]),
@@ -26,7 +26,7 @@ $dbConnection->createSchemaManager()->createTable(
         ],
     ))
     ->setPrimaryKey(['id'])
-    ->addUniqueConstraint(['id'], 'flow_async_table_uniq')
+    ->addUniqueConstraint(['id'], 'flow_dataset_table_uniq')
 );
 
 return $dbConnection;

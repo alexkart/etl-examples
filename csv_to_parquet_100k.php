@@ -17,6 +17,9 @@ if (\file_exists(__DIR__ . '/output/dataset_100k.parquet')) {
     \unlink(__DIR__ . '/output/dataset_100k.parquet');
 }
 
+$csvFileSize = \round(\filesize(__DIR__ . '/data/dataset.csv') / 1024 / 1024);
+echo "Converting CSV {$csvFileSize}Mb file into parquet...\n";
+
 $stopwatch = new Stopwatch();
 $stopwatch->start();
 $total = 0;
@@ -38,4 +41,7 @@ $memory->current();
 $stopwatch->stop();
 
 echo "Memory consumption, max: {$memory->max()->inMb()}Mb, min: {$memory->min()->inMb()}Mb\n";
-echo "Total reading Parquet: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";
+echo "Total elapsed time: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n";
+
+$csvFileSize = \round(\filesize(__DIR__ . '/output/dataset_100k.parquet') / 1024 / 1024);
+echo "Output parquet file size {$csvFileSize}Mb\n";
