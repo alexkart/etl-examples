@@ -37,5 +37,5 @@ $memory->current();
 $memory->current();
 $stopwatch->stop();
 
-print "Memory consumption, max: {$memory->max()->inMb()}Mb, min: {$memory->min()->inMb()}Mb\n";
-print "Total reading Parquet: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";
+echo "Memory consumption, max: {$memory->max()->inMb()}Mb, min: {$memory->min()->inMb()}Mb\n";
+echo "Total reading Parquet: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";

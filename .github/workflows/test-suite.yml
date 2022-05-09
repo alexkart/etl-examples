@@ -3,10 +3,80 @@ name: Test Suite
 on:
   pull_request:
   push:
-    branches: [ 1.x ]
+    branches: [ "main" ]
   schedule: [ { cron: '0 8 * * *' } ]
 
 jobs:
   static-analyze:
     name: "Static Analyze"
     uses: flow-php/actions/.github/workflows/composer-script-static-analyze.yaml@main
+
+  launch-examples:
+    name: "Launch Examples"
+
+    runs-on: "ubuntu-latest"
+
+    services:
+      postgres:
+        image: postgres:13.6-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2"
+
+      - name: "Install PHP"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          tools: composer:v2
+          php-version: "8.1"
+          ini-values: memory_limit=-1
+
+      - name: "Get Composer Cache Directory"
+        id: composer-cache
+        run: |
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - name: "Cache Composer dependencies"
+        uses: "actions/cache@v2"
+        with:
+          path: |
+            ${{ steps.composer-cache.outputs.dir }}
+          key: "php-composer-${{ hashFiles('**/composer.lock') }}"
+          restore-keys: |
+            php-composer-
+
+      - name: "Install locked dependencies"
+        run: "composer install --no-interaction --no-progress --no-suggest"
+
+      - name: "CSV To Json"
+        run: "php csv_to_json.php"
+
+      - name: "CSV To Parquet - 10k Row Groups"
+        run: "php csv_to_parquet_10k.php"
+
+      - name: "CSV To Parquet - 100k Row Groups"
+        run: "php csv_to_parquet_100k.php"
+
+      - name: "PHP To CSV"
+        run: "php php_to_csv.php"
+
+      - name: "CSV To DB - Async - AMP PHP"
+        run: "php csv_to_db_async_amp.php"
+
+      - name: "CSV To DB - Async - ReactPHP"
+        run: "php csv_to_db_async_react.php"
+
+      - name: "CSV To DB - Sync"
+        run: "php csv_to_db_sync.php"
+
+      - name: "Benchmark - Reading - CSV,Parquet - 10k Rows at once"
+        run: "php read_benchmark_10k.php"
+
+      - name: "Benchmark - Reading - CSV,Parquet - 100k Rows at once"
+        run: "php read_benchmark_100k.php"

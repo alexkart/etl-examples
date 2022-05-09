@@ -39,5 +39,5 @@ $memory->current();
 $memory->current();
 $stopwatch->stop();
 
-print "Memory consumption, max: {$memory->max()->inMb()}Mb\n";
-print "Total writing CSV: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";
+echo "Memory consumption, max: {$memory->max()->inMb()}Mb\n";
+echo "Total writing CSV: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";

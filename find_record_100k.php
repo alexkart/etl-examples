@@ -19,7 +19,7 @@ require __DIR__ . '/vendor/autoload.php';
 // CVS
 
 $csvFileSize = \round(\filesize(__DIR__ . '/data/dataset.csv') / 1024 / 1024);
-print "Reading CSV file: {$csvFileSize}Mb...\n";
+echo "Reading CSV file: {$csvFileSize}Mb...\n";
 $stopwatch = new Stopwatch();
 $stopwatch->start();
 
@@ -35,12 +35,12 @@ $stopwatch->start();
 
 $stopwatch->stop();
 
-print "Total reading CSV: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";
+echo "Total reading CSV: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";
 
 // PARQUET
 
 $parquetFileSize = \round(\filesize(__DIR__ . '/data/dataset_100k.parquet') / 1024 / 1024);
-print "Reading Parquet file: {$parquetFileSize}Mb...\n";
+echo "Reading Parquet file: {$parquetFileSize}Mb...\n";
 
 $stopwatch = new Stopwatch();
 $stopwatch->start();
@@ -57,4 +57,4 @@ $stopwatch->start();
 
 $stopwatch->stop();
 
-print "Total reading Parquet: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";
+echo "Total reading Parquet: {$stopwatch->totalElapsedTime()->inSecondsPrecise()}s\n\n";
