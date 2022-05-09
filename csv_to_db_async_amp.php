@@ -56,5 +56,5 @@ $stopwatch->start();
 $stopwatch->stop();
 
 echo 'Flow PHP - Elapsed time: ' . $stopwatch->totalElapsedTime()->inSecondsPrecise() . "s \n";
-$dbRows = \current($dbConnection->executeQuery("SELECT COUNT(*) FROM flow_dataset_table")->fetchNumeric());
-echo "Total inserted rows: $dbRows\n";
+$dbRows = \current($dbConnection->executeQuery('SELECT COUNT(*) FROM flow_dataset_table')->fetchNumeric());
+echo "Total inserted rows: {$dbRows}\n";
