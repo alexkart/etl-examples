@@ -26,7 +26,7 @@ if (!\is_dir(__DIR__ . '/var/run/')) {
 $dbConnection = require __DIR__ . '/db_clean.php';
 
 $logger = new Logger('server');
-$logger->pushHandler(new StreamHandler('php://stdout', LogLevel::DEBUG, false));
+//$logger->pushHandler(new StreamHandler('php://stdout', LogLevel::DEBUG, false));
 $logger->pushHandler(new StreamHandler('php://stderr', LogLevel::ERROR, false));
 
 $csvFileSize = \round(\filesize(__DIR__ . '/data/dataset.csv') / 1024 / 1024);
