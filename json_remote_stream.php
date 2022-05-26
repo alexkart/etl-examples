@@ -9,7 +9,7 @@ use Symfony\Component\Dotenv\Dotenv;
 require __DIR__ . '/vendor/autoload.php';
 
 $dotenv = new Dotenv();
-$dotenv->load(__DIR__.'/.env');
+$dotenv->load(__DIR__ . '/.env');
 
 $s3_client_option = [
     'credentials' => [
@@ -23,7 +23,7 @@ $s3_client_option = [
 $blob_account = $_ENV['AZURE_BLOB_ACCOUNT'];
 $blob_key = $_ENV['AZURE_BLOB_KEY'];
 
-$azure_blob_connection_string = "DefaultEndpointsProtocol=https;AccountName=$blob_account;AccountKey=$blob_key";
+$azure_blob_connection_string = "DefaultEndpointsProtocol=https;AccountName={$blob_account};AccountKey={$blob_key}";
 
 require __DIR__ . '/vendor/autoload.php';
 
