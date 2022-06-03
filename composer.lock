@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c80054ab3b8be07ed055cf1199512ac",
+    "content-hash": "2e3e3f3d80c2b09cad540fcf7fb82a0b",
     "packages": [
         {
             "name": "aeon-php/calendar",
@@ -893,16 +893,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.224.0",
+            "version": "3.224.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "bc5eb18414ef703c5f39a5a009a437c74c228306"
+                "reference": "52f45dfe0d1e5a77f33c050bde5134901fc54a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bc5eb18414ef703c5f39a5a009a437c74c228306",
-                "reference": "bc5eb18414ef703c5f39a5a009a437c74c228306",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/52f45dfe0d1e5a77f33c050bde5134901fc54a57",
+                "reference": "52f45dfe0d1e5a77f33c050bde5134901fc54a57",
                 "shasum": ""
             },
             "require": {
@@ -978,9 +978,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.224.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.224.3"
             },
-            "time": "2022-05-27T20:23:28+00:00"
+            "time": "2022-06-02T18:22:57+00:00"
         },
         {
             "name": "codename/parquet",
@@ -1522,12 +1522,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/doctrine-dbal-bulk.git",
-                "reference": "90c1192ae70aecd2e219fb09b58803e09cca8a37"
+                "reference": "749032d0cd94293c8809682b63279694de3b92c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/doctrine-dbal-bulk/zipball/90c1192ae70aecd2e219fb09b58803e09cca8a37",
-                "reference": "90c1192ae70aecd2e219fb09b58803e09cca8a37",
+                "url": "https://api.github.com/repos/flow-php/doctrine-dbal-bulk/zipball/749032d0cd94293c8809682b63279694de3b92c4",
+                "reference": "749032d0cd94293c8809682b63279694de3b92c4",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1562,7 @@
                 "issues": "https://github.com/flow-php/doctrine-dbal-bulk/issues",
                 "source": "https://github.com/flow-php/doctrine-dbal-bulk/tree/1.x"
             },
-            "time": "2022-05-14T16:27:54+00:00"
+            "time": "2022-06-03T07:02:51+00:00"
         },
         {
             "name": "flow-php/etl",
@@ -1570,12 +1570,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl.git",
-                "reference": "22ff0c2a877f80d99df8f01196de242274623c64"
+                "reference": "91753b873fece5368e7d1d89d58eec980b0dcad1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl/zipball/22ff0c2a877f80d99df8f01196de242274623c64",
-                "reference": "22ff0c2a877f80d99df8f01196de242274623c64",
+                "url": "https://api.github.com/repos/flow-php/etl/zipball/91753b873fece5368e7d1d89d58eec980b0dcad1",
+                "reference": "91753b873fece5368e7d1d89d58eec980b0dcad1",
                 "shasum": ""
             },
             "require": {
@@ -1619,7 +1619,7 @@
                 "issues": "https://github.com/flow-php/etl/issues",
                 "source": "https://github.com/flow-php/etl/tree/1.x"
             },
-            "time": "2022-05-25T10:39:58+00:00"
+            "time": "2022-06-03T06:03:02+00:00"
         },
         {
             "name": "flow-php/etl-adapter-amphp",
@@ -1627,12 +1627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-amphp.git",
-                "reference": "7c27e7278eb8496d182f31fdaddbd98a522d0bc5"
+                "reference": "dd6c511ea3262b8b1149b562e7259acd08e5cd4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-amphp/zipball/7c27e7278eb8496d182f31fdaddbd98a522d0bc5",
-                "reference": "7c27e7278eb8496d182f31fdaddbd98a522d0bc5",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-amphp/zipball/dd6c511ea3262b8b1149b562e7259acd08e5cd4d",
+                "reference": "dd6c511ea3262b8b1149b562e7259acd08e5cd4d",
                 "shasum": ""
             },
             "require": {
@@ -1671,7 +1671,57 @@
                 "issues": "https://github.com/flow-php/etl-adapter-amphp/issues",
                 "source": "https://github.com/flow-php/etl-adapter-amphp/tree/1.x"
             },
-            "time": "2022-05-27T10:35:38+00:00"
+            "time": "2022-06-02T10:38:30+00:00"
+        },
+        {
+            "name": "flow-php/etl-adapter-avro",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-avro.git",
+                "reference": "1ffd2abb74ba97287335d078d75fc6216b302ea2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-avro/zipball/1ffd2abb74ba97287335d078d75fc6216b302ea2",
+                "reference": "1ffd2abb74ba97287335d078d75fc6216b302ea2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flow-php/etl": "^1.0@dev",
+                "php": "~8.1"
+            },
+            "require-dev": {
+                "flix-tech/avro-php": "^4.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - Avro",
+            "keywords": [
+                "adapter",
+                "avro",
+                "etl",
+                "extract",
+                "load",
+                "transform"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-avro/issues",
+                "source": "https://github.com/flow-php/etl-adapter-avro/tree/1.x"
+            },
+            "time": "2022-05-18T08:19:25+00:00"
         },
         {
             "name": "flow-php/etl-adapter-csv",
@@ -1679,20 +1729,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-csv.git",
-                "reference": "d623452a6b4ed7f14488c479503678a40a9778ac"
+                "reference": "5536270e1289f9b50e8ba29a890c206ee4d70ac4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-csv/zipball/d623452a6b4ed7f14488c479503678a40a9778ac",
-                "reference": "d623452a6b4ed7f14488c479503678a40a9778ac",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-csv/zipball/5536270e1289f9b50e8ba29a890c206ee4d70ac4",
+                "reference": "5536270e1289f9b50e8ba29a890c206ee4d70ac4",
                 "shasum": ""
             },
             "require": {
                 "flow-php/etl": "^1.0@dev",
                 "php": "~8.1"
-            },
-            "require-dev": {
-                "league/csv": "^9.7"
             },
             "default-branch": true,
             "type": "library",
@@ -1720,7 +1767,7 @@
                 "issues": "https://github.com/flow-php/etl-adapter-csv/issues",
                 "source": "https://github.com/flow-php/etl-adapter-csv/tree/1.x"
             },
-            "time": "2022-05-08T17:26:37+00:00"
+            "time": "2022-05-28T16:12:47+00:00"
         },
         {
             "name": "flow-php/etl-adapter-doctrine",
@@ -1728,16 +1775,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-doctrine.git",
-                "reference": "7fba37de67d5e1c92d0ff32cd789d04cf6cd25e9"
+                "reference": "d1587aa92aa5ca19a43d34d3d7e4754db5fdbd88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-doctrine/zipball/7fba37de67d5e1c92d0ff32cd789d04cf6cd25e9",
-                "reference": "7fba37de67d5e1c92d0ff32cd789d04cf6cd25e9",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-doctrine/zipball/d1587aa92aa5ca19a43d34d3d7e4754db5fdbd88",
+                "reference": "d1587aa92aa5ca19a43d34d3d7e4754db5fdbd88",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "^2.12 || ^3.1.4",
                 "flow-php/etl": "^1.0@dev",
                 "php": "~8.1"
             },
@@ -1745,7 +1791,7 @@
                 "flow-php/doctrine-dbal-bulk": "^1.0@dev"
             },
             "suggest": {
-                "flow-php/doctrine-dbal-bulk": "Allows DbalBulkLoader to insert data in bulks into database"
+                "flow-php/doctrine-dbal-bulk": "Read/Write data int bulks from Databases"
             },
             "default-branch": true,
             "type": "library",
@@ -1760,7 +1806,7 @@
             "license": [
                 "MIT"
             ],
-            "description": "ETL adapter for bulk operations using Doctrine DBAL Bulk",
+            "description": "PHP ETL - Adapter - Doctrine Dbal",
             "keywords": [
                 "bulk",
                 "dbal",
@@ -1774,7 +1820,111 @@
                 "issues": "https://github.com/flow-php/etl-adapter-doctrine/issues",
                 "source": "https://github.com/flow-php/etl-adapter-doctrine/tree/1.x"
             },
-            "time": "2022-04-10T10:49:55+00:00"
+            "time": "2022-06-03T07:04:16+00:00"
+        },
+        {
+            "name": "flow-php/etl-adapter-elasticsearch",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-elasticsearch.git",
+                "reference": "87803309e406d245d342f29b78c6680cc224d343"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-elasticsearch/zipball/87803309e406d245d342f29b78c6680cc224d343",
+                "reference": "87803309e406d245d342f29b78c6680cc224d343",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flow-php/etl": "^1.0@dev",
+                "php": "~8.1"
+            },
+            "require-dev": {
+                "elasticsearch/elasticsearch": "^7.6"
+            },
+            "suggest": {
+                "elasticsearch/elasticsearch": "PHP Elasticsearch client used by Loaders and Extractor, preferably versions ^7.6 | ^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - Elasticsearch",
+            "keywords": [
+                "adapter",
+                "elasticsearch",
+                "etl",
+                "extract",
+                "load",
+                "transform"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-elasticsearch/issues",
+                "source": "https://github.com/flow-php/etl-adapter-elasticsearch/tree/1.x"
+            },
+            "time": "2022-04-10T19:25:46+00:00"
+        },
+        {
+            "name": "flow-php/etl-adapter-http",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-http.git",
+                "reference": "a55d93b013ad4609fd99416062d227aae2205376"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-http/zipball/a55d93b013ad4609fd99416062d227aae2205376",
+                "reference": "a55d93b013ad4609fd99416062d227aae2205376",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flow-php/etl": "^1.0@dev",
+                "php": "~8.1",
+                "psr/http-client": "^1.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.4",
+                "php-http/curl-client": "^2.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - Http",
+            "keywords": [
+                "etl",
+                "extract",
+                "http",
+                "load",
+                "transform"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-http/issues",
+                "source": "https://github.com/flow-php/etl-adapter-http/tree/1.x"
+            },
+            "time": "2022-04-10T12:20:52+00:00"
         },
         {
             "name": "flow-php/etl-adapter-json",
@@ -1830,17 +1980,64 @@
             "time": "2022-05-25T07:26:30+00:00"
         },
         {
+            "name": "flow-php/etl-adapter-logger",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-logger.git",
+                "reference": "6659b2997bac5cf6e4379e890c4ccb18c03a8826"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-logger/zipball/6659b2997bac5cf6e4379e890c4ccb18c03a8826",
+                "reference": "6659b2997bac5cf6e4379e890c4ccb18c03a8826",
+                "shasum": ""
+            },
+            "require": {
+                "flow-php/etl": "^1.0@dev",
+                "php": "~8.1",
+                "psr/log": "^1.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - Logger",
+            "keywords": [
+                "etl",
+                "extract",
+                "load",
+                "logger",
+                "psr",
+                "transform"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-logger/issues",
+                "source": "https://github.com/flow-php/etl-adapter-logger/tree/1.x"
+            },
+            "time": "2022-04-10T18:46:32+00:00"
+        },
+        {
             "name": "flow-php/etl-adapter-parquet",
             "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-parquet.git",
-                "reference": "f32a3f3c4b817bdab17324b61ac5c97f6ac80777"
+                "reference": "6bf78c23dce2e46ae4997d63a08e7dd5d9e4f837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-parquet/zipball/f32a3f3c4b817bdab17324b61ac5c97f6ac80777",
-                "reference": "f32a3f3c4b817bdab17324b61ac5c97f6ac80777",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-parquet/zipball/6bf78c23dce2e46ae4997d63a08e7dd5d9e4f837",
+                "reference": "6bf78c23dce2e46ae4997d63a08e7dd5d9e4f837",
                 "shasum": ""
             },
             "require": {
@@ -1877,7 +2074,7 @@
                 "issues": "https://github.com/flow-php/etl-adapter-parquet/issues",
                 "source": "https://github.com/flow-php/etl-adapter-parquet/tree/1.x"
             },
-            "time": "2022-05-18T08:22:33+00:00"
+            "time": "2022-05-28T21:00:58+00:00"
         },
         {
             "name": "flow-php/etl-adapter-reactphp",
@@ -1937,12 +2134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-streams.git",
-                "reference": "5e54ca8e7b71b99fc061020e7d3eff58755e93aa"
+                "reference": "18bde2804d59c515ddc3f5ed5acc5e2f59229253"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-streams/zipball/5e54ca8e7b71b99fc061020e7d3eff58755e93aa",
-                "reference": "5e54ca8e7b71b99fc061020e7d3eff58755e93aa",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-streams/zipball/18bde2804d59c515ddc3f5ed5acc5e2f59229253",
+                "reference": "18bde2804d59c515ddc3f5ed5acc5e2f59229253",
                 "shasum": ""
             },
             "require": {
@@ -1981,7 +2178,161 @@
                 "issues": "https://github.com/flow-php/etl-adapter-streams/issues",
                 "source": "https://github.com/flow-php/etl-adapter-streams/tree/1.x"
             },
-            "time": "2022-05-26T06:53:34+00:00"
+            "time": "2022-06-03T06:35:23+00:00"
+        },
+        {
+            "name": "flow-php/etl-adapter-text",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-text.git",
+                "reference": "3f8736de458f929449098fb92fea6718195b9694"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-text/zipball/3f8736de458f929449098fb92fea6718195b9694",
+                "reference": "3f8736de458f929449098fb92fea6718195b9694",
+                "shasum": ""
+            },
+            "require": {
+                "flow-php/etl": "^1.0@dev",
+                "php": "~8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - Text",
+            "keywords": [
+                "adapter",
+                "etl",
+                "extract",
+                "load",
+                "text",
+                "transform"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-text/issues",
+                "source": "https://github.com/flow-php/etl-adapter-text/tree/1.x"
+            },
+            "time": "2022-06-03T05:58:58+00:00"
+        },
+        {
+            "name": "flow-php/etl-adapter-xml",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-xml.git",
+                "reference": "afc1df5975673034dd9257308473326c7e6865c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-xml/zipball/afc1df5975673034dd9257308473326c7e6865c5",
+                "reference": "afc1df5975673034dd9257308473326c7e6865c5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-xmlreader": "*",
+                "flow-php/etl": "^1.0@dev",
+                "php": "~8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - XML",
+            "keywords": [
+                "adapter",
+                "etl",
+                "extract",
+                "load",
+                "transform",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-xml/issues",
+                "source": "https://github.com/flow-php/etl-adapter-xml/tree/1.x"
+            },
+            "time": "2022-05-08T19:34:33+00:00"
+        },
+        {
+            "name": "flow-php/flow",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/flow.git",
+                "reference": "dcc4250401fb3dec6bdf6f149e93b0a18dafe267"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/flow/zipball/dcc4250401fb3dec6bdf6f149e93b0a18dafe267",
+                "reference": "dcc4250401fb3dec6bdf6f149e93b0a18dafe267",
+                "shasum": ""
+            },
+            "require": {
+                "flow-php/etl": "^1.0@dev",
+                "flow-php/etl-adapter-avro": "^1.0@dev",
+                "flow-php/etl-adapter-csv": "^1.0@dev",
+                "flow-php/etl-adapter-doctrine": "^1.0@dev",
+                "flow-php/etl-adapter-elasticsearch": "^1.0@dev",
+                "flow-php/etl-adapter-http": "^1.0@dev",
+                "flow-php/etl-adapter-json": "^1.0@dev",
+                "flow-php/etl-adapter-logger": "^1.0@dev",
+                "flow-php/etl-adapter-parquet": "^1.0@dev",
+                "flow-php/etl-adapter-streams": "^1.0@dev",
+                "flow-php/etl-adapter-text": "^1.0@dev",
+                "flow-php/etl-adapter-xml": "^1.0@dev",
+                "php": "~8.1"
+            },
+            "suggest": {
+                "codename/parquet": "Read/Write data int bulks from parquet files",
+                "elasticsearch/elasticsearch": "Read/Write from elasticsearch",
+                "flix-tech/avro-php": "Read/Write data int bulks from avro files",
+                "flow-php/doctrine-dbal-bulk": "Read/Write data int bulks from Databases",
+                "flow-php/etl-adapter-amphp": "Process data asynchronously using PHPAmp library",
+                "flow-php/etl-adapter-reactphp": "Process data asynchronously using ReactPHP library",
+                "halaxa/json-machine": "Read/Write data from json files",
+                "league/flysystem": "Read/Write data int bulks from remote filesystems",
+                "league/flysystem-aws-s3-v3": "Read/Write data int bulks from AWS S3",
+                "league/flysystem-azure-blob-storage": "Read/Write data int bulks from Azure Blob Storage",
+                "psr/http-client": "Any implementation of psr/http-client read/write from urls"
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Flow PHP - Unified data processing library",
+            "keywords": [
+                "data-eninering",
+                "data-processing",
+                "etl"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/flow/issues",
+                "source": "https://github.com/flow-php/flow/tree/1.x"
+            },
+            "time": "2022-06-03T07:22:11+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3537,30 +3888,30 @@
         },
         {
             "name": "psr/log",
-            "version": "3.0.0",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.0"
+                "php": ">=5.3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Log\\": "src"
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3581,9 +3932,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.0"
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
-            "time": "2021-07-14T16:46:02+00:00"
+            "time": "2021-05-03T11:20:27+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -4481,16 +4832,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.25.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "0abb51d2f102e00a4eefcf46ba7fec406d245825"
+                "reference": "9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/0abb51d2f102e00a4eefcf46ba7fec406d245825",
-                "reference": "0abb51d2f102e00a4eefcf46ba7fec406d245825",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e",
+                "reference": "9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e",
                 "shasum": ""
             },
             "require": {
@@ -4505,7 +4856,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.23-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4544,7 +4895,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.25.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -4560,7 +4911,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-30T18:21:41+00:00"
+            "time": "2022-05-24T11:49:31+00:00"
         }
     ],
     "packages-dev": [
@@ -5628,16 +5979,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.25.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "30885182c981ab175d4d034db0f6f469898070ab"
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/30885182c981ab175d4d034db0f6f469898070ab",
-                "reference": "30885182c981ab175d4d034db0f6f469898070ab",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
                 "shasum": ""
             },
             "require": {
@@ -5652,7 +6003,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.23-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5690,7 +6041,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.25.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -5706,20 +6057,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-20T20:35:02+00:00"
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.25.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "81b86b50cf841a64252b439e738e97f4a34e2783"
+                "reference": "433d05519ce6990bf3530fba6957499d327395c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/81b86b50cf841a64252b439e738e97f4a34e2783",
-                "reference": "81b86b50cf841a64252b439e738e97f4a34e2783",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/433d05519ce6990bf3530fba6957499d327395c2",
+                "reference": "433d05519ce6990bf3530fba6957499d327395c2",
                 "shasum": ""
             },
             "require": {
@@ -5731,7 +6082,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.23-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5771,7 +6122,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.25.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -5787,20 +6138,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-23T21:10:46+00:00"
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.25.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                "reference": "8590a5f561694770bdcd3f9b5c69dde6945028e8"
+                "reference": "219aa369ceff116e673852dce47c3a41794c14bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/8590a5f561694770bdcd3f9b5c69dde6945028e8",
-                "reference": "8590a5f561694770bdcd3f9b5c69dde6945028e8",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/219aa369ceff116e673852dce47c3a41794c14bd",
+                "reference": "219aa369ceff116e673852dce47c3a41794c14bd",
                 "shasum": ""
             },
             "require": {
@@ -5812,7 +6163,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.23-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5855,7 +6206,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.25.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -5871,20 +6222,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.25.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c"
+                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4407588e0d3f1f52efb65fbe92babe41f37fe50c",
-                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/cfa0ae98841b9e461207c13ab093d76b0fa7bace",
+                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace",
                 "shasum": ""
             },
             "require": {
@@ -5893,7 +6244,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.23-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5938,7 +6289,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.25.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -5954,20 +6305,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-04T08:16:47+00:00"
+            "time": "2022-05-10T07:21:04+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
-            "version": "v1.25.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php81.git",
-                "reference": "5de4ba2d41b15f9bd0e19b2ab9674135813ec98f"
+                "reference": "13f6d1271c663dc5ae9fb843a8f16521db7687a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/5de4ba2d41b15f9bd0e19b2ab9674135813ec98f",
-                "reference": "5de4ba2d41b15f9bd0e19b2ab9674135813ec98f",
+                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/13f6d1271c663dc5ae9fb843a8f16521db7687a1",
+                "reference": "13f6d1271c663dc5ae9fb843a8f16521db7687a1",
                 "shasum": ""
             },
             "require": {
@@ -5976,7 +6327,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.23-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -6017,7 +6368,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php81/tree/v1.25.0"
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -6033,7 +6384,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-13T13:58:11+00:00"
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
             "name": "symfony/process",
@@ -6332,15 +6683,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "flow-php/flow": 20,
         "flow-php/doctrine-dbal-bulk": 20,
-        "flow-php/etl": 20,
-        "flow-php/etl-adapter-amphp": 20,
-        "flow-php/etl-adapter-csv": 20,
-        "flow-php/etl-adapter-doctrine": 20,
-        "flow-php/etl-adapter-json": 20,
-        "flow-php/etl-adapter-parquet": 20,
         "flow-php/etl-adapter-reactphp": 20,
-        "flow-php/etl-adapter-streams": 20
+        "flow-php/etl-adapter-amphp": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
