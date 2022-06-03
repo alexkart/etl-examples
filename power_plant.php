@@ -11,7 +11,7 @@ use Flow\ETL\GroupBy\Aggregation;
 require __DIR__ . '/vendor/autoload.php';
 
 (new Flow())
-    ->read(CSV::from_file(__DIR__ . '/data/power-plant-daily.csv', 10, 0, 'r', 'row', ';'))
+    ->read(CSV::from(__DIR__ . '/data/power-plant-daily.csv', 10, 0, 'r', 'row', ';'))
     ->rows(Transform::array_unpack('row'))
     ->rows(Transform::rename('Produkcja(kWh)', 'production_kwh'))
     ->rows(Transform::rename('Zużycie(kWh)', 'consumption_kwh'))

@@ -33,7 +33,7 @@ $memory->current();
 
         $memory->current();
     }))
-    ->write(CSV::to_file(__DIR__ . '/output/dataset.csv', 'w+', true))
+    ->write(CSV::to(__DIR__ . '/output/dataset.csv', 'w+', true))
     ->run();
 
 $memory->current();
