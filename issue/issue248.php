@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 use Flow\ETL\DSL\Entry;
 use Flow\ETL\DSL\From;
@@ -15,7 +15,7 @@ require __DIR__ . '/../vendor/autoload.php';
     ->read(From::array(
         [
             ['entry_a' => 'value', 'entry_b' => 'value'],
-            ['entry_a' => 'value', 'entry_b' => 'value']
+            ['entry_a' => 'value', 'entry_b' => 'value'],
         ]
     ))
     ->rows(Transform::array_unpack('row'))
@@ -29,7 +29,7 @@ require __DIR__ . '/../vendor/autoload.php';
     ->read(From::array(
         [
             ['entry_a' => 'value', 'entry_b' => 'value'],
-            ['entry_a' => 'value', 'entry_b' => 'value']
+            ['entry_a' => 'value', 'entry_b' => 'value'],
         ]
     ))
     ->rows(Transform::array_unpack('row'))
@@ -43,7 +43,7 @@ require __DIR__ . '/../vendor/autoload.php';
     ->read(From::array(
         [
             ['entry_a' => 'value', 'entry_b' => 'value'],
-            ['entry_a' => 'value', 'entry_b' => 'value']
+            ['entry_a' => 'value', 'entry_b' => 'value'],
         ]
     ))
     ->rows(Transform::array_unpack('row'))
@@ -51,20 +51,20 @@ require __DIR__ . '/../vendor/autoload.php';
     ->write(To::stdout())
     ->transform(
         new class implements Transformer {
-            public function transform(Rows $rows): Rows
+            public function __serialize() : array
+            {
+                return [];
+            }
+
+            public function __unserialize(array $data) : void
+            {
+            }
+
+            public function transform(Rows $rows) : Rows
             {
                 return $rows->map(function (Row $row) : Row {
                     return $row->add(Entry::integer('extra_value', \random_int(1, 10)));
                 });
-            }
-
-            public function __unserialize(array $data): void
-            {
-            }
-
-            public function __serialize(): array
-            {
-                return [];
             }
         }
     )
