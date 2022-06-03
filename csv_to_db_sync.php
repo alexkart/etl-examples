@@ -32,7 +32,7 @@ $csvFileSize = \round(\filesize(__DIR__ . '/data/dataset.csv') / 1024 / 1024);
 echo "Loading CSV {$csvFileSize}Mb file into postgresql...\n";
 
 (new Flow())
-    ->read(CSV::from($path = __DIR__ . '/data/dataset.csv', 10_000, 0))
+    ->read(CSV::from($path = __DIR__ . '/data/dataset.csv', 10_000))
     ->rows(Transform::array_unpack('row'))
     ->drop('row')
     ->rows(Transform::to_integer('id'))

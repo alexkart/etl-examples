@@ -27,7 +27,7 @@ $memory = new Consumption();
 $memory->current();
 
 (new Flow())
-    ->read(CSV::from(__DIR__ . '/data/dataset.csv', 10_000, 0))
+    ->read(CSV::from(__DIR__ . '/data/dataset.csv', 10_000))
     ->rows(Transform::array_unpack('row'))
     ->drop('row')
     ->write(To::callback(function (Rows $rows) use (&$total, $memory) : void {

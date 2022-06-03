@@ -24,7 +24,7 @@ $stopwatch = new Stopwatch();
 $stopwatch->start();
 
 (new Flow())
-        ->read(CSV::from(__DIR__ . '/data/dataset.csv', 100_000, 0))
+        ->read(CSV::from(__DIR__ . '/data/dataset.csv', 100_000))
         ->rows(Transform::array_unpack('row'))
         ->drop('row')
         ->filter(function (Row $r) {
