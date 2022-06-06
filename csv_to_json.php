@@ -1,8 +1,9 @@
 <?php declare(strict_types=1);
 
 use Aeon\Calendar\Stopwatch;
-use Flow\ETL\Adapter\JSON\JsonLoader;
 use Flow\ETL\DSL\CSV;
+use Flow\ETL\DSL\Json;
+use Flow\ETL\DSL\Stream;
 use Flow\ETL\DSL\To;
 use Flow\ETL\DSL\Transform;
 use Flow\ETL\Flow;
@@ -25,7 +26,7 @@ $memory = new Consumption();
 $memory->current();
 
 (new Flow())
-    ->read(CSV::from_file(__DIR__ . '/data/dataset.csv', 1000, 0))
+    ->read(CSV::from(__DIR__ . '/data/dataset.csv'))
     ->rows(Transform::array_unpack('row'))
     ->drop('row')
     ->write(To::callback(function (Rows $rows) use (&$total, $memory) : void {
@@ -33,7 +34,7 @@ $memory->current();
 
         $memory->current();
     }))
-    ->write(new JsonLoader(__DIR__ . '/output/dataset.json'))
+    ->write(Json::to(Stream::local_file(__DIR__ . '/output/dataset.json')))
     ->run();
 
 $memory->current();

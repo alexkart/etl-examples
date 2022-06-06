@@ -4,3 +4,4 @@ output/*
 docker-compose.yml
 var
 .idea
+.env

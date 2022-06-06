@@ -24,7 +24,7 @@ $stopwatch = new Stopwatch();
 $stopwatch->start();
 
 (new Flow())
-        ->read(CSV::from_file(__DIR__ . '/data/dataset.csv', 100_000, 0))
+        ->read(CSV::from(__DIR__ . '/data/dataset.csv', 100_000))
         ->rows(Transform::array_unpack('row'))
         ->drop('row')
         ->filter(function (Row $r) {
@@ -46,7 +46,7 @@ $stopwatch = new Stopwatch();
 $stopwatch->start();
 
 (new Flow())
-    ->read(Parquet::from_file(__DIR__ . '/data/dataset_100k.parquet', 'row', ['id']))
+    ->read(Parquet::from(__DIR__ . '/data/dataset_100k.parquet', 'row', ['id']))
     ->rows(Transform::array_unpack('row'))
     ->drop('row')
     ->filter(function (Row $r) {

@@ -29,7 +29,7 @@ $memory = new Consumption();
 $memory->current();
 
 (new Flow())
-    ->read(CSV::from_file(__DIR__ . '/data/dataset.csv', 10_000, 0))
+    ->read(CSV::from(__DIR__ . '/data/dataset.csv', 10_000))
     ->rows(Transform::array_unpack('row'))
     ->drop('row')
     ->write(To::callback(function (Rows $rows) use (&$total, $memory) : void {
@@ -55,7 +55,7 @@ $total = 0;
 $memory = new Consumption();
 $memory->current();
 (new Flow())
-    ->read(Parquet::from_file(__DIR__ . '/data/dataset_10k.parquet'))
+    ->read(Parquet::from(__DIR__ . '/data/dataset_10k.parquet'))
     ->rows(Transform::array_unpack('row'))
     ->drop('row')
     ->write(To::callback(function (Rows $rows) use (&$total, $memory) : void {

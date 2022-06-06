@@ -10,16 +10,17 @@
     "ext-json": "*",
     "aeon-php/calendar": "^1.0",
     "codename/parquet": "^0.6.2",
-    "flow-php/doctrine-dbal-bulk": "1.x-dev",
-    "flow-php/etl": "^1.0@dev",
-    "flow-php/etl-adapter-amphp": "^1.0@dev",
-    "flow-php/etl-adapter-csv": "^1.0@dev",
-    "flow-php/etl-adapter-doctrine": "1.x-dev",
-    "flow-php/etl-adapter-json": "^1.0@dev",
-    "flow-php/etl-adapter-parquet": "1.x-dev",
+    "flow-php/flow": "^1.0@dev",
+    "flow-php/doctrine-dbal-bulk": "^1.0@dev",
     "flow-php/etl-adapter-reactphp": "^1.0@dev",
+    "flow-php/etl-adapter-amphp": "^1.0@dev",
+    "halaxa/json-machine": "^1.1",
     "league/csv": "^9.8",
-    "monolog/monolog": "^2.5"
+    "league/flysystem": "^3.0",
+    "league/flysystem-aws-s3-v3": "^3.0",
+    "league/flysystem-azure-blob-storage": "^3.0",
+    "monolog/monolog": "^2.5",
+    "symfony/dotenv": "^6.0"
   },
   "autoload": {
     "psr-4": {
