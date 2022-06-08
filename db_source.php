@@ -33,11 +33,11 @@ $dbConnection->createSchemaManager()->createTable(
 $dataPath = __DIR__ . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'dataset.csv';
 $loadCsvDataToDb = <<<SQL
 COPY source_dataset_table(id, name, "last name", phone)
-FROM '$dataPath'
+FROM '{$dataPath}'
 DELIMITER ','
 CSV HEADER;
 SQL;
 
 $rows = $dbConnection->executeStatement($loadCsvDataToDb);
 
-return $dbConnection;
+return [$dbConnection, $rows];

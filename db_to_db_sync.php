@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 use Aeon\Calendar\Stopwatch;
 use Flow\ETL\Adapter\Doctrine\DbalLoader;
@@ -21,7 +21,7 @@ if (!\is_dir(__DIR__ . '/var/run/')) {
 
 // source db connection
 echo "Loading source data into postgresql...\n";
-$sourceDbConnection = require __DIR__ . '/db_source.php';
+[$sourceDbConnection, $rows] = require __DIR__ . '/db_source.php';
 
 // target db connection
 $dbConnection = require __DIR__ . '/db_clean.php';
@@ -34,16 +34,16 @@ $stopwatch = new Stopwatch();
 $stopwatch->start();
 
 $batchSize = 1000;
-$params = array_fill(0, ceil($rows / $batchSize), ['limit' => $batchSize, 'offset' => 0]);
-array_walk($params, function (&$value, $key) {
+$params = \array_fill(0, (int) \ceil($rows / $batchSize), ['limit' => $batchSize, 'offset' => 0]);
+\array_walk($params, function (&$value, $key) : void {
     $value['offset'] = $value['limit'] * $key;
 });
 
-echo "Loading $rows rows into postgresql...\n";
+echo "Loading {$rows} rows into postgresql...\n";
 
 $extractor = new DbalQueryExtractor(
     $sourceDbConnection,
-    "SELECT * FROM source_dataset_table ORDER BY id LIMIT :limit OFFSET :offset",
+    'SELECT * FROM source_dataset_table ORDER BY id LIMIT :limit OFFSET :offset',
     new ParametersSet(...$params)
 );
 
