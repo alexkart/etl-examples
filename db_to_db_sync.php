@@ -1,9 +1,9 @@
-
 <?php
 
 use Aeon\Calendar\Stopwatch;
 use Flow\ETL\Adapter\Doctrine\DbalLoader;
 use Flow\ETL\Adapter\Doctrine\DbalQueryExtractor;
+use Flow\ETL\Adapter\Doctrine\ParametersSet;
 use Flow\ETL\DSL\Transform;
 use Flow\ETL\Flow;
 use Monolog\Handler\StreamHandler;
@@ -33,11 +33,22 @@ $logger->pushHandler(new StreamHandler(__DIR__ . '/../var/logs/server_error.log'
 $stopwatch = new Stopwatch();
 $stopwatch->start();
 
-$rows = 1000;
+$batchSize = 1000;
+$params = array_fill(0, ceil($rows / $batchSize), ['limit' => $batchSize, 'offset' => 0]);
+array_walk($params, function (&$value, $key) {
+    $value['offset'] = $value['limit'] * $key;
+});
+
 echo "Loading $rows rows into postgresql...\n";
 
+$extractor = new DbalQueryExtractor(
+    $sourceDbConnection,
+    "SELECT * FROM source_dataset_table ORDER BY id LIMIT :limit OFFSET :offset",
+    new ParametersSet(...$params)
+);
+
 (new Flow())
-    ->read(new DbalQueryExtractor($sourceDbConnection, "SELECT * FROM source_dataset_table LIMIT $rows;"))
+    ->read($extractor)
     ->rows(Transform::array_unpack('row'))
     ->drop('row')
     ->rows(Transform::to_integer('id'))

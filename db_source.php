@@ -38,6 +38,6 @@ DELIMITER ','
 CSV HEADER;
 SQL;
 
-$dbConnection->executeQuery($loadCsvDataToDb);
+$rows = $dbConnection->executeStatement($loadCsvDataToDb);
 
 return $dbConnection;
